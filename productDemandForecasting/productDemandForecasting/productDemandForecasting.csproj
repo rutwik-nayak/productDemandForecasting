@@ -1,0 +1,604 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{92797EFF-5510-45D6-9A0B-1C999AEEF5C0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>productDemandForecasting</RootNamespace>
+    <AssemblyName>productDemandForecasting</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Company\AddProductFeatures.aspx" />
+    <Content Include="Admin\AdminAccount.aspx" />
+    <Content Include="Admin\AdminHome.aspx" />
+    <Content Include="Admin\Comments.aspx" />
+    <Content Include="Admin\CompanyQueries.aspx" />
+    <Content Include="Admin\Customers.aspx" />
+    <Content Include="Admin\DiscussionForum.aspx" />
+    <Content Include="Admin\ExistingCompanies.aspx" />
+    <Content Include="Admin\QueryReply.aspx" />
+    <Content Include="Company\AddFeatures.aspx" />
+    <Content Include="Company\AddProducts.aspx" />
+    <Content Include="Company\AddValues.aspx" />
+    <Content Include="Company\Categories.aspx" />
+    <Content Include="Company\Comments.aspx" />
+    <Content Include="Company\CompanyAccount.aspx" />
+    <Content Include="Company\CompanyHome.aspx" />
+    <Content Include="Company\Features.aspx" />
+    <Content Include="Company\Photos\Nokia1100.jpg" />
+    <Content Include="Company\Queries.aspx" />
+    <Content Include="Company\Ratings.aspx" />
+    <Content Include="Company\Topics.aspx" />
+    <Content Include="Company\_BasicphoneDemand.aspx" />
+    <Content Include="Company\_BasicphoneResults.aspx" />
+    <Content Include="Company\_SingleBPhone.aspx" />
+    <Content Include="Company\_SingleSPhone.aspx" />
+    <Content Include="Company\_SmartphoneDemand.aspx" />
+    <Content Include="Company\_SmartphoneResults.aspx" />
+    <Content Include="css\jquery.mmenu.all.css" />
+    <Content Include="css\productviewgallery.css" />
+    <Content Include="css\slider.css" />
+    <Content Include="css\style.css" />
+    <Content Include="Customer\CustomerAccount.aspx" />
+    <Content Include="Customer\CustomerHome.aspx" />
+    <Content Include="Customer\ProductDetails.aspx" />
+    <Content Include="Customer\Products.aspx" />
+    <Content Include="Guest\Aboutus.aspx" />
+    <Content Include="Guest\Companies.aspx" />
+    <Content Include="Guest\CompanyRegistration.aspx" />
+    <Content Include="Guest\Contactus.aspx" />
+    <Content Include="Guest\CustomerRegistration.aspx" />
+    <Content Include="Guest\Customers.aspx" />
+    <Content Include="Guest\FAQs.aspx" />
+    <Content Include="Guest\Index.aspx" />
+    <Content Include="Guest\Login.aspx" />
+    <Content Include="Guest\Register.aspx" />
+    <Content Include="Guest\Services.aspx" />
+    <Content Include="images\0001-1.jpg" />
+    <Content Include="images\0001-2.jpg" />
+    <Content Include="images\0001-3.jpg" />
+    <Content Include="images\0001-4.jpg" />
+    <Content Include="images\0001-5.jpg" />
+    <Content Include="images\about_pic.jpg" />
+    <Content Include="images\arrow-next.png" />
+    <Content Include="images\arrow-prev.png" />
+    <Content Include="images\art.png" />
+    <Content Include="images\blog-img.jpg" />
+    <Content Include="images\blog-img1.jpg" />
+    <Content Include="images\blog-img2.jpg" />
+    <Content Include="images\cart.png" />
+    <Content Include="images\close.png" />
+    <Content Include="images\delbtn1.jpeg" />
+    <Content Include="images\delbtn2.jpeg" />
+    <Content Include="images\delbtn3.jpeg" />
+    <Content Include="images\delete1.png" />
+    <Content Include="images\delete2.png" />
+    <Content Include="images\delete3.png" />
+    <Content Include="images\delete4.png" />
+    <Content Include="images\delete5.jpg" />
+    <Content Include="images\delete6.png" />
+    <Content Include="images\delete7.png" />
+    <Content Include="images\delete8.png" />
+    <Content Include="images\deletebtn.jpg" />
+    <Content Include="images\delivery.png" />
+    <Content Include="images\det_pic1.jpg" />
+    <Content Include="images\det_pic2.jpg" />
+    <Content Include="images\down_arrow.png" />
+    <Content Include="images\edit-10-xxl.png" />
+    <Content Include="images\facebook.png" />
+    <Content Include="images\f_pic1.jpg" />
+    <Content Include="images\f_pic2.jpg" />
+    <Content Include="images\f_pic3.jpg" />
+    <Content Include="images\f_pic4.jpg" />
+    <Content Include="images\f_pic5.jpg" />
+    <Content Include="images\f_pic6.jpg" />
+    <Content Include="images\gpluse.png" />
+    <Content Include="images\icon1.png" />
+    <Content Include="images\icon2.png" />
+    <Content Include="images\icon3.png" />
+    <Content Include="images\icon4.png" />
+    <Content Include="images\icon5.png" />
+    <Content Include="images\icon_1.png" />
+    <Content Include="images\icon_2.png" />
+    <Content Include="images\icon_3.png" />
+    <Content Include="images\icon_4.png" />
+    <Content Include="images\img1.jpg" />
+    <Content Include="images\img2.jpg" />
+    <Content Include="images\img3.jpg" />
+    <Content Include="images\large\0001-1.jpg" />
+    <Content Include="images\large\0001-2.jpg" />
+    <Content Include="images\large\0001-3.jpg" />
+    <Content Include="images\large\0001-4.jpg" />
+    <Content Include="images\large\0001-5.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo1.png" />
+    <Content Include="images\logo2.png" />
+    <Content Include="images\logo3.png" />
+    <Content Include="images\marker2.gif" />
+    <Content Include="images\nav-icon.png" />
+    <Content Include="images\NewCompanies.jpg" />
+    <Content Include="images\NewCustomers.jpg" />
+    <Content Include="images\PDF1.jpg" />
+    <Content Include="images\PDF2.jpg" />
+    <Content Include="images\PDF3.jpg" />
+    <Content Include="images\PDF4.jpg" />
+    <Content Include="images\PDF5.jpg" />
+    <Content Include="images\pic1.jpg" />
+    <Content Include="images\pic2.jpg" />
+    <Content Include="images\pic3.jpg" />
+    <Content Include="images\pic4.jpg" />
+    <Content Include="images\pic5.jpg" />
+    <Content Include="images\pic6.jpg" />
+    <Content Include="images\replybtn.png" />
+    <Content Include="images\replyicon.jpg" />
+    <Content Include="images\rss.png" />
+    <Content Include="images\search.png" />
+    <Content Include="images\slider-image1.jpg" />
+    <Content Include="images\slider-image2.jpg" />
+    <Content Include="images\slider-image3.jpg" />
+    <Content Include="images\slider-image4.jpg" />
+    <Content Include="images\slider-image5.jpg" />
+    <Content Include="images\small\0001-1.jpg" />
+    <Content Include="images\small\0001-2.jpg" />
+    <Content Include="images\small\0001-3.jpg" />
+    <Content Include="images\small\0001-4.jpg" />
+    <Content Include="images\small\0001-5.jpg" />
+    <Content Include="images\thumbs\1.jpg" />
+    <Content Include="images\thumbs\2.jpg" />
+    <Content Include="images\thumbs\3.jpg" />
+    <Content Include="images\thumbs\4.jpg" />
+    <Content Include="images\thumbs\5.jpg" />
+    <Content Include="images\top-move.jpg" />
+    <Content Include="images\twitter.png" />
+    <Content Include="images\up_arrow.png" />
+    <Content Include="js\cloud-zoom.1.0.3.min.js" />
+    <Content Include="js\easing.js" />
+    <Content Include="js\jquery.eislideshow.js" />
+    <Content Include="js\jquery.fancybox.pack.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.mmenu.js" />
+    <Content Include="js\move-top.js" />
+    <Content Include="js\productviewgallery.js" />
+    <Content Include="signout.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Company\AddProductFeatures.aspx.cs">
+      <DependentUpon>AddProductFeatures.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\AddProductFeatures.aspx.designer.cs">
+      <DependentUpon>AddProductFeatures.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminAccount.aspx.cs">
+      <DependentUpon>AdminAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminAccount.aspx.designer.cs">
+      <DependentUpon>AdminAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminMasterPage.Master.cs">
+      <DependentUpon>AdminMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminMasterPage.Master.designer.cs">
+      <DependentUpon>AdminMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Comments.aspx.cs">
+      <DependentUpon>Comments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Comments.aspx.designer.cs">
+      <DependentUpon>Comments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CompanyQueries.aspx.cs">
+      <DependentUpon>CompanyQueries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CompanyQueries.aspx.designer.cs">
+      <DependentUpon>CompanyQueries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Customers.aspx.cs">
+      <DependentUpon>Customers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Customers.aspx.designer.cs">
+      <DependentUpon>Customers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DiscussionForum.aspx.cs">
+      <DependentUpon>DiscussionForum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DiscussionForum.aspx.designer.cs">
+      <DependentUpon>DiscussionForum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ExistingCompanies.aspx.cs">
+      <DependentUpon>ExistingCompanies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ExistingCompanies.aspx.designer.cs">
+      <DependentUpon>ExistingCompanies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\QueryReply.aspx.cs">
+      <DependentUpon>QueryReply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\QueryReply.aspx.designer.cs">
+      <DependentUpon>QueryReply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BLL.cs" />
+    <Compile Include="Company\AddFeatures.aspx.cs">
+      <DependentUpon>AddFeatures.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\AddFeatures.aspx.designer.cs">
+      <DependentUpon>AddFeatures.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\AddProducts.aspx.cs">
+      <DependentUpon>AddProducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\AddProducts.aspx.designer.cs">
+      <DependentUpon>AddProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\AddValues.aspx.cs">
+      <DependentUpon>AddValues.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\AddValues.aspx.designer.cs">
+      <DependentUpon>AddValues.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\Categories.aspx.cs">
+      <DependentUpon>Categories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\Categories.aspx.designer.cs">
+      <DependentUpon>Categories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\Comments.aspx.cs">
+      <DependentUpon>Comments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\Comments.aspx.designer.cs">
+      <DependentUpon>Comments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompanyAccount.aspx.cs">
+      <DependentUpon>CompanyAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\CompanyAccount.aspx.designer.cs">
+      <DependentUpon>CompanyAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompanyHome.aspx.cs">
+      <DependentUpon>CompanyHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\CompanyHome.aspx.designer.cs">
+      <DependentUpon>CompanyHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompanyMasterPage.Master.cs">
+      <DependentUpon>CompanyMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\CompanyMasterPage.Master.designer.cs">
+      <DependentUpon>CompanyMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Company\Features.aspx.cs">
+      <DependentUpon>Features.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\Features.aspx.designer.cs">
+      <DependentUpon>Features.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\Queries.aspx.cs">
+      <DependentUpon>Queries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\Queries.aspx.designer.cs">
+      <DependentUpon>Queries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\Ratings.aspx.cs">
+      <DependentUpon>Ratings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\Ratings.aspx.designer.cs">
+      <DependentUpon>Ratings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\Topics.aspx.cs">
+      <DependentUpon>Topics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\Topics.aspx.designer.cs">
+      <DependentUpon>Topics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\_BasicphoneDemand.aspx.cs">
+      <DependentUpon>_BasicphoneDemand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\_BasicphoneDemand.aspx.designer.cs">
+      <DependentUpon>_BasicphoneDemand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\_BasicphoneResults.aspx.cs">
+      <DependentUpon>_BasicphoneResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\_BasicphoneResults.aspx.designer.cs">
+      <DependentUpon>_BasicphoneResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\_SingleBPhone.aspx.cs">
+      <DependentUpon>_SingleBPhone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\_SingleBPhone.aspx.designer.cs">
+      <DependentUpon>_SingleBPhone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\_SingleSPhone.aspx.cs">
+      <DependentUpon>_SingleSPhone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\_SingleSPhone.aspx.designer.cs">
+      <DependentUpon>_SingleSPhone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\_SmartphoneDemand.aspx.cs">
+      <DependentUpon>_SmartphoneDemand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\_SmartphoneDemand.aspx.designer.cs">
+      <DependentUpon>_SmartphoneDemand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\_SmartphoneResults.aspx.cs">
+      <DependentUpon>_SmartphoneResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\_SmartphoneResults.aspx.designer.cs">
+      <DependentUpon>_SmartphoneResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\CustomerAccount.aspx.cs">
+      <DependentUpon>CustomerAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\CustomerAccount.aspx.designer.cs">
+      <DependentUpon>CustomerAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\CustomerHome.aspx.cs">
+      <DependentUpon>CustomerHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\CustomerHome.aspx.designer.cs">
+      <DependentUpon>CustomerHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\CustomerMasterPage.Master.cs">
+      <DependentUpon>CustomerMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\CustomerMasterPage.Master.designer.cs">
+      <DependentUpon>CustomerMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\ProductDetails.aspx.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\ProductDetails.aspx.designer.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DL.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Guest\Aboutus.aspx.cs">
+      <DependentUpon>Aboutus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Guest\Aboutus.aspx.designer.cs">
+      <DependentUpon>Aboutus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Guest\Companies.aspx.cs">
+      <DependentUpon>Companies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Guest\Companies.aspx.designer.cs">
+      <DependentUpon>Companies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Guest\CompanyRegistration.aspx.cs">
+      <DependentUpon>CompanyRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Guest\CompanyRegistration.aspx.designer.cs">
+      <DependentUpon>CompanyRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Guest\Contactus.aspx.cs">
+      <DependentUpon>Contactus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Guest\Contactus.aspx.designer.cs">
+      <DependentUpon>Contactus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Guest\CustomerRegistration.aspx.cs">
+      <DependentUpon>CustomerRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Guest\CustomerRegistration.aspx.designer.cs">
+      <DependentUpon>CustomerRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Guest\Customers.aspx.cs">
+      <DependentUpon>Customers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Guest\Customers.aspx.designer.cs">
+      <DependentUpon>Customers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Guest\FAQs.aspx.cs">
+      <DependentUpon>FAQs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Guest\FAQs.aspx.designer.cs">
+      <DependentUpon>FAQs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Guest\GuestMasterPage.Master.cs">
+      <DependentUpon>GuestMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Guest\GuestMasterPage.Master.designer.cs">
+      <DependentUpon>GuestMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Guest\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Guest\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Guest\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Guest\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Guest\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Guest\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Guest\Services.aspx.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Guest\Services.aspx.designer.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="signout.aspx.cs">
+      <DependentUpon>signout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signout.aspx.designer.cs">
+      <DependentUpon>signout.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AdminMasterPage.Master" />
+    <Content Include="Company\CompanyMasterPage.Master" />
+    <Content Include="Customer\CustomerMasterPage.Master" />
+    <None Include="Company\Files\BasicphonesActualDataset.xls" />
+    <None Include="Company\Files\BasicphonesTestingDataset.xls" />
+    <None Include="Company\Files\BasicphonesTrainingDataset.xls" />
+    <None Include="Company\Files\SmartphonesActualDataset.xls" />
+    <None Include="Company\Files\SmartphonesTestingDataset.xls" />
+    <None Include="Company\Files\SmartphonesTrainingDataset.xls" />
+    <None Include="DL.xsc">
+      <DependentUpon>DL.xsd</DependentUpon>
+    </None>
+    <None Include="DL.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DL.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DL.xss">
+      <DependentUpon>DL.xsd</DependentUpon>
+    </None>
+    <Content Include="Guest\GuestMasterPage.Master" />
+    <None Include="images\large\Thumbs.db" />
+    <None Include="images\small\Thumbs.db" />
+    <None Include="images\thumbs\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Guest\Logos\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>9337</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
